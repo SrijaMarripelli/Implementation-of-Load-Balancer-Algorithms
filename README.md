@@ -6,6 +6,8 @@
 
 # Load Balancing Algorithms : 
  There are various load balancing algorithms that determine how traffic is distributed across backend servers. Some common algorithms include:
+ 
 Round-robin: This is the simplest algorithm, which distributes traffic to servers in a sequential order.
+
 Least connections: This algorithm directs traffic to the server with the fewest active connections.
 
