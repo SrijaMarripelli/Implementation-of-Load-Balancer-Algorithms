@@ -61,7 +61,7 @@ Open the file:
 
 `~ns-2.35/linkstate/ls.h`
 
-**Change at the line no. 137 **
+**Change at the line no. 137**
 
 `void eraseAll() { erase(baseMap::begin(), baseMap::end()); }`
 
@@ -92,4 +92,7 @@ Open a new Terminal and run,
 **Note:** Replace the `<yourusername>` with your linux user name
 
 Run the following command:
+
 `$] source .bashrc`
+
+With this the environment is ready to use and implement this project
