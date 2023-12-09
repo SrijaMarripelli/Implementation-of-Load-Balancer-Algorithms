@@ -29,7 +29,6 @@ proc finish {} {
 # Create four main nodes
 set totalNodes 4
 
-17
 for {set i 0} {$i < $totalNodes} {incr i} {
 set n$i [$ns node]
 }
@@ -63,8 +62,7 @@ $ns duplex-link $n2 $sn3 2Mb 100ms DropTail
 $ns duplex-link $n2 $sn4 2Mb 100ms DropTail
 
 # For node 3
-$ns duplex-link $n3 $sn5 2Mb 100ms DropTail
-18	
+$ns duplex-link $n3 $sn5 2Mb 100ms DropTail	
 $ns duplex-link $n3 $sn6 2Mb 100ms DropTail
 $ns duplex-link $n3 $sn7 2Mb 100ms DropTail
 $ns duplex-link $n3 $sn8 2Mb 100ms DropTail
@@ -98,7 +96,6 @@ $ns attach-agent $n0 $tcp
 
 # Defining a transport agent for receiving
 set sink [new Agent/TCPSink]
-19
 
 # Attaching transport agent to receiver node
 $ns attach-agent $n2 $sink
@@ -134,7 +131,7 @@ $ns attach-agent $n1 $sink
 
 #Connecting sending and receiving transport agents
 $ns connect $tcp $sink
-20
+
 #Defining Application instance
 set ftp [new Application/FTP]
 
@@ -169,7 +166,7 @@ set ftp [new Application/FTP]
 
 # Attaching transport agent to application agent
 $ftp attach-agent $tcp
-21
+
 # data packet generation starting time
 $ns at 11.0 "$ftp start"
 
