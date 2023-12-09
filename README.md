@@ -1,4 +1,4 @@
-# Implementation-of-Load-Balancer-Algorithms-in-Networks
+# Implementation of Load Balancer Algorithms in Networks
  Implementation of effective load balancing algorithms that can optimize resource utilization, maximize throughput, minimize response time, and ensure high availability.
 
 # How Load Balancing Works : 
